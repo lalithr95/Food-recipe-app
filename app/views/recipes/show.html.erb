@@ -16,7 +16,7 @@
 				<h2>Ingredients</h2>
 				<ul>
 					<% @recipe.ingredients.each do |ing| %>
-						<li>ing.name</li>
+						<li><%= ing.name %></li>
 					<% end %>
 				</ul>
 			</div>
@@ -26,7 +26,7 @@
 				<h2>Directions</h2>
 				<ul>
 					<% @recipe.directions.each do |dir| %>
-						<li>dir.step</li>
+						<li><%= dir.step %></li>
 					<% end %>
 				</ul>
 			</div>
